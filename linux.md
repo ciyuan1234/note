@@ -1,0 +1,1 @@
+![](assets/linux/file-20260201155454523.png)
