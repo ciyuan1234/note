@@ -425,6 +425,7 @@ settings:
       label: Vanilla Plus
       value: anp-callout-vanilla-plus
 
+-
     id: anp-callout-color-toggle
     title: 启用自定义提示框颜色
     type: class-toggle
