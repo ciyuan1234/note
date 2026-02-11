@@ -7957,7 +7957,7 @@ const localeMap = {
 const locale = localeMap[lang || 'en'];
 function t(str) {
   if (!locale) {
-    console.error('Error: Style Settings locale not found', lang);
+    console.error('错误：未找到样式设置的语言', lang);
   }
   return (locale && locale[str]) || en[str];
 }
@@ -9320,7 +9320,7 @@ class HeadingSettingComponent extends AbstractSettingComponent {
     if (this.setting.resetFn) {
       this.settingEl.addExtraButton((b) => {
         b.setIcon('reset')
-          .setTooltip('Reset all settings to default')
+          .setTooltip('重置所有设置为默认')
           .onClick(this.setting.resetFn);
       });
     }
@@ -9328,7 +9328,7 @@ class HeadingSettingComponent extends AbstractSettingComponent {
   addExportButton() {
     this.settingEl.addExtraButton((b) => {
       b.setIcon('install');
-      b.setTooltip('Export settings');
+      b.setTooltip('导出设置');
       b.extraSettingsEl.onClickEvent((e) => {
         e.stopPropagation();
         let title = getTitle(this.setting);
@@ -9444,12 +9444,12 @@ class SettingsMarkup {
     containerEl.createDiv({ cls: 'style-settings-empty' }, (wrapper) => {
       wrapper.createDiv({
         cls: 'style-settings-empty-name',
-        text: 'No style settings found',
+        text: '未找到样式设置',
       });
       wrapper.createDiv({ cls: 'style-settings-empty-desc' }).appendChild(createFragment((frag) => {
-        frag.appendText('Style settings configured by theme and plugin authors will show up here. You can also create your own configuration by creating a CSS snippet in your vault. ');
+        frag.appendText('主题和插件作者配置的样式设置会显示在此。你也可以在库中创建 CSS 代码片段来自定义设置。 ');
         frag.createEl('a', {
-          text: 'Click here for details and examples.',
+          text: '点击此处查看详情与示例。',
           href: 'https://github.com/mgmeyers/obsidian-style-settings#obsidian-style-settings-plugin',
         });
       }));
@@ -9468,7 +9468,7 @@ class SettingsMarkup {
       // Build and import link to open the import modal
       setting.controlEl.createEl('a', {
         cls: 'style-settings-import',
-        text: 'Import',
+        text: '导入',
         href: '#',
       }, (el) => {
         el.addEventListener('click', (e) => {
@@ -9479,7 +9479,7 @@ class SettingsMarkup {
       // Build and export link to open the export modal
       setting.controlEl.createEl('a', {
         cls: 'style-settings-export',
-        text: 'Export',
+        text: '导出',
         href: '#',
       }, (el) => {
         el.addEventListener('click', (e) => {
@@ -9506,7 +9506,7 @@ class SettingsMarkup {
           }
         }, 250);
       });
-      searchComponent.setPlaceholder('Search Style Settings...');
+      searchComponent.setPlaceholder('搜索样式设置...');
     });
     this.settingsContainerEl = containerEl.createDiv();
     this.settingsComponentTrees = [];
@@ -9537,7 +9537,7 @@ class SettingsMarkup {
         this.settingsComponentTrees.push(settingsComponentTree);
       }
       catch (e) {
-        console.error('Style Settings | Failed to render section', e);
+        console.error('样式设置 | 渲染区块失败', e);
       }
     }
   }
@@ -9595,7 +9595,7 @@ class SettingsView extends obsidian.ItemView {
     return 'gear';
   }
   getDisplayText() {
-    return 'Style Settings';
+    return '样式设置';
   }
   onOpen() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -9626,7 +9626,7 @@ class CSSSettingsPlugin extends obsidian.Plugin {
       this.registerView(viewType, (leaf) => new SettingsView(this, leaf));
       this.addCommand({
         id: 'show-style-settings-leaf',
-        name: 'Show style settings view',
+        name: '显示样式设置视图',
         callback: () => {
           this.activateView();
         },
