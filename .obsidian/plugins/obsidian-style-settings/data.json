@@ -118,5 +118,6 @@
   "anuppuccin-theme-settings@@anp-table-auto": true,
   "anuppuccin-theme-settings@@anp-td-highlight": "anp-td-alt-rows",
   "anuppuccin-theme-settings@@anp-table-highlight-opacity": 1,
-  "anuppuccin-theme-settings@@anp-header-color-toggle": true
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-canvas-dark-bg": false
 }
