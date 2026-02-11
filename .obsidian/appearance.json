@@ -1,3 +1,7 @@
 {
-  "cssTheme": "AnuPpuccin"
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "【AnuPpuccin】扩展的颜色方案",
+    "【AnuPpuccin】custom-rainbow-colors"
+  ]
 }
