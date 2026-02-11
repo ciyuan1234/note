@@ -579,15 +579,15 @@ settings:
 # File Editor & Markdown Elements :: LaTeX
 
 -
-    id: anp-latex-header
-    title: LaTex
-    type: heading
+    id: anp-layout-header
+    title: 工作区 布局
+    description: 工作区布局与排列
     description: LaTeX (Math) color, font size
     level: 2
     collapsed: true
--
-    id: anp-latex-inline-color
-    title: LaTeX Inline Color
+  -
+    id: anp-layout-select
+    title: 工作区 布局 变体
     type: class-select
     allowEmpty: true
     default: anp-latex-inline-text
@@ -2192,8 +2192,8 @@ settings:
 
 -
     id: anp-workspace-header
-    title: Workspace
-    description: Background, Colorful Frame, Layout, Sidebar, Tabs, Translucency, etc.
+    title: 工作区
+    description: 背景、彩色边框、布局、侧边栏、标签页、透明度 等
     type: heading
     level: 1
     collapsed: true
@@ -2202,8 +2202,8 @@ settings:
 
 -
     id: anp-canvas-header
-    title: Canvas
-    description: Darken Canvas Background
+    title: 画布 (Canvas)
+    description: 加深画布背景
     type: heading
     level: 2
     collapsed: true
