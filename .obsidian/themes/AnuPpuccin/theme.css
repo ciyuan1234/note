@@ -580,18 +580,18 @@ settings:
 # File Editor & Markdown Elements :: LaTeX
 
 -
-    id: anp-layout-header
-    title: 工作区 布局
-    description: 工作区布局与排列
-    description: LaTeX (Math) color, font size
-    level: 2
-    collapsed: true
-  -
-    id: anp-layout-select
-    title: 工作区 布局 变体
-    type: class-select
-    allowEmpty: true
-    default: anp-latex-inline-text
+  id: anp-latex-header
+  title: LaTeX（数学）
+  description: LaTeX（数学）颜色与字体大小
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: anp-layout-select
+  title: 工作区 布局 变体
+  type: class-select
+  allowEmpty: true
+  default: anp-latex-inline-text
     options:
     -
         label: Rosewater
