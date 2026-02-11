@@ -9484,7 +9484,7 @@ class SettingsMarkup {
       }, (el) => {
         el.addEventListener('click', (e) => {
           e.preventDefault();
-          this.plugin.settingsManager.export('All settings', this.plugin.settingsManager.settings);
+          this.plugin.settingsManager.export('全部设置', this.plugin.settingsManager.settings);
         });
       });
       // Searchbar
@@ -9692,7 +9692,7 @@ class CSSSettingsPlugin extends obsidian.Plugin {
             var _a, _b;
             const settingsSearchResource = {
               tab: 'obsidian-style-settings',
-              name: 'Style Settings',
+              name: '样式设置',
               text: (_a = getTitle(x)) !== null && _a !== void 0 ? _a : '',
               desc: (_b = getDescription(x)) !== null && _b !== void 0 ? _b : '',
             };
