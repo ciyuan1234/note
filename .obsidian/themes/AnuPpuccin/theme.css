@@ -20,16 +20,16 @@ settings:
 # Colors
 
 -
-  id: anp-colors-section-header
-  title: 颜色
-  description: 主题强调色与风格，颜色覆盖与扩展配色方案
-  type: heading
-  level: 1
-  collapsed: true
+    id: anp-colors-section-header
+    title: Colors
+    description: Theme Accent and Flavors, Color Overrides, Extended Color Schemes
+    type: heading
+    level: 1
+    collapsed: true
 -
     id: anuppuccin-theme-light
-    title: 浅色主题风格
-    description: 选择偏好的浅色主题风格
+    title: Light Theme Flavor
+    description: Select your preferred light mode flavor
     type: class-select
     allowEmpty: false
     default: ctp-latte
@@ -42,8 +42,8 @@ settings:
         value: ctp-rosepine-light
 -
     id: anuppuccin-theme-dark
-    title: 深色主题风格
-    description: 选择偏好的深色主题风格
+    title: Dark Theme Flavor
+    description: Select your preferred dark mode flavor
     type: class-select
     allowEmpty: false
     default: ctp-mocha
@@ -62,8 +62,8 @@ settings:
         value: ctp-mocha-old
 -
     id: anuppuccin-light-theme-accents
-    title: 浅色主题强调色
-    description: 选择浅色主题的强调色（留空则使用深色主题强调色）
+    title: Light Theme Accent
+    description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
     type: class-select
     allowEmpty: true
     default: none
@@ -112,8 +112,8 @@ settings:
         value: ctp-accent-light-lavender
 -
     id: anuppuccin-theme-accents
-    title: 深色主题强调色
-    description: 选择偏好的强调色
+    title: Dark Theme Accent
+    description: Select your preferred accent
     type: class-select
     allowEmpty: false
     default: ctp-accent-rosewater
@@ -162,14 +162,14 @@ settings:
         value: ctp-accent-lavender
 -
     id: anuppuccin-accent-toggle
-    title: 强制自定义强调色
-    description: 强制使用配色方案特定的自定义强调色，替代默认 Obsidian 强调色
+    title: Force Custom Accents
+    description: Forces colorscheme-specific custom accents to be utilised instead of default obsidian accent
     type: class-toggle
     default: true
 -
     id: anuppuccin-url-extended-colorschemes
-    title: 扩展配色方案代码片段
-    description: "点击此链接下载代码片段：[this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)。"
+    title: Extended Color Schemes Snippet
+    description: "Download the snippet by clicking on [this link](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)."
     type: info-text
     markdown: true
 
@@ -368,12 +368,12 @@ settings:
 # File Editor
 
 -
-  id: anp-editor-header
-  title: 文件编辑器与 Markdown 元素
-  description: 提示框、复选框、代码块、列表、表格、标签 等
-  type: heading
-  level: 1
-  collapsed: true
+    id: anp-editor-header
+    title: File Editor & Markdown Elements
+    description: Callouts, Checkboxes, Codeblocks, Lists, Tables, Tags, etc.
+    type: heading
+    level: 1
+    collapsed: true
 -
     id: anp-active-line
     title: Active line highlight
@@ -397,37 +397,36 @@ settings:
 # File Editor & Markdown Elements :: Callouts
 -
     id: anp-callout-header
-    title: 提示框 (Callouts)
+    title: Callouts
     description: Callout styles, border radius, custom colors
     type: heading
     level: 2
     collapsed: true
 -
     id: anp-callout-select
-    title: 提示框样式
+    title: Callout Style
     type: class-select
     default: none
     allowEmpty: false
     options:
     -
-      label: Default
-      value: none
+        label: Default
+        value: none
     -
-      label: Sleek
-      value: anp-callout-sleek
+        label: Sleek
+        value: anp-callout-sleek
     -
-      label: Block
-      value: anp-callout-block
+        label: Block
+        value: anp-callout-block
     -
-      label: Vanilla Normal
-      value: anp-callout-vanilla-normal
+        label: Vanilla Normal
+        value: anp-callout-vanilla-normal
     -
-      label: Vanilla Plus
-      value: anp-callout-vanilla-plus
-
+        label: Vanilla Plus
+        value: anp-callout-vanilla-plus
 -
     id: anp-callout-color-toggle
-    title: 启用自定义提示框颜色
+    title: Enable Custom Callout Colors
     type: class-toggle
 -
     id: callout-radius
@@ -495,8 +494,8 @@ settings:
 
 -
     id: anp-codeblock-header
-    title: 代码块
-    description: 代码块换行与行号设置
+    title: Codeblocks
+    description: Codeblock wrapping, line numbering
     type: heading
     level: 2
     collapsed: true
@@ -580,18 +579,18 @@ settings:
 # File Editor & Markdown Elements :: LaTeX
 
 -
-  id: anp-latex-header
-  title: LaTeX（数学）
-  description: LaTeX（数学）颜色与字体大小
-  type: heading
-  level: 2
-  collapsed: true
+    id: anp-latex-header
+    title: LaTex
+    type: heading
+    description: LaTeX (Math) color, font size
+    level: 2
+    collapsed: true
 -
-  id: anp-layout-select
-  title: 工作区 布局 变体
-  type: class-select
-  allowEmpty: true
-  default: anp-latex-inline-text
+    id: anp-latex-inline-color
+    title: LaTeX Inline Color
+    type: class-select
+    allowEmpty: true
+    default: anp-latex-inline-text
     options:
     -
         label: Rosewater
@@ -749,8 +748,8 @@ settings:
 # File Editor & Markdown Elements :: Lists
 
 -
-    id: anp-lists-header
-    title: 列表
+    id: anp-list-header
+    title: Lists
     description: Styling, indent, spacing
     type: heading
     level: 2
@@ -839,8 +838,8 @@ settings:
 # File Editor & Markdown Elements :: Tables
 
 -
-    id: anp-tables-header
-    title: 表格
+    id: anp-table-header
+    title: Tables
     description: Table width, alignment, table element highlight and alignment, border width
     type: heading
     level: 2
@@ -940,8 +939,8 @@ settings:
 
 -
     id: anp-tags-header
-    title: 标签
-    description: 标签的边框宽度与圆角
+    title: Tags
+    description: Border Width and Border Radius of Tags
     type: heading
     level: 2
     collapsed: true
@@ -965,8 +964,8 @@ settings:
 
 -
     id: anp-preview-header
-    title: 文件预览
-    description: 文件预览边距与换行宽度
+    title: File Preview
+    description: File Preview Margins and Word-Wrap Width
     type: heading
     level: 1
     collapsed: true
@@ -997,8 +996,8 @@ settings:
 
 -
     id: anp-plugin-header
-    title: 集成
-    description: Kanban、MAKE.md、精简卡片代码片段 等
+    title: Integrations
+    description: Kanban, MAKE.md, Minimal Cards Snippet, etc.
     type: heading
     level: 1
     collapsed: true
@@ -1007,7 +1006,7 @@ settings:
 
 -
     id: anp-plugin-kanban
-    title: 看板 (Kanban)
+    title: Kanban
     description: 
     type: heading
     level: 2
@@ -1168,20 +1167,20 @@ settings:
 
 -
     id: anp-snippet-minimal-cards
-    title: 精简卡片 (Minimal Cards)
+    title: Minimal Cards
     type: heading
     level: 2
     collapsed: true
 -
     id: anp-snippet-minimal-cards-disc
-    title: 使用说明
-    description: "Minimal Cards 是 [Minimal](https://github.com/kepano/obsidian-minimal) 的一项功能。AnuPpuccin 未内置编译后的代码片段，但可与本主题一起使用已编译版本。"
+    title: Usage
+    description: "Minimal Cards is a feature of [Minimal](https://github.com/kepano/obsidian-minimal). AnuPpuccin does not come compiled with the snippet, however you can use a compiled version with this theme."
     type: info-text
     markdown: true
 -
     id: anuppuccin-url-minimal-cards-snippet
-    title: 精简卡片代码片段
-    description: "通过此链接从 [kepano](https://github.com/kepano/) 的 GitHub 下载代码片段：[this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)。"
+    title: Minimal Cards Snippet
+    description: "Download the snippet from [kepano](https://github.com/kepano/)'s github via [this link](https://github.com/kepano/obsidian-minimal/blob/master/src/scss/features/cards.scss)."
     type: info-text
     markdown: true
 -
@@ -1220,31 +1219,31 @@ settings:
 
 -
     id: anp-misc-element-header
-    title: 其他
-    description: 主题色板过渡、自定义元数据按钮
+    title: Miscellaneous
+    description: Color Palette Transition, Custom Metadata Button
     type: heading
     level: 1
     collapsed: true
 -
     id: anp-color-transition-toggle
-    title: 启用色彩过渡（实验）
-    description: "切换配色时添加过渡效果，视觉更流畅 :)"
+    title: Enable Color Transition (WIP)
+    description: "Adds a transition when switching palettes, looks really neat :)"
     type: class-toggle
 -
     id: anp-button-metadata-toggle
-    title: 启用自定义元数据按钮
+    title: Enable Custom Metadata Button
     type: class-toggle
 -
     id: anp-print
-    title: 启用打印样式
+    title: Enable Print Styling
     type: class-toggle
 
 # Show/Hide UI Elements
 
 -
     id: anp-show-hide-elements-header
-    title: 显示/隐藏 界面元素
-    description: 切换界面元素的可见性
+    title: Show/Hide UI Elements
+    description: Toggle Visibility of UI Elements
     type: heading
     level: 1
     collapsed: true
@@ -1290,8 +1289,8 @@ settings:
 
 -
     id: anp-typography-header
-    title: 排版
-    description: 字体、标题、文本装饰 等
+    title: Typography
+    description: Fonts, Headings, Text Decoration, etc.
     type: heading
     level: 1
     collapsed: true
@@ -1300,7 +1299,7 @@ settings:
 
 -
     id: anp-font-families-header
-    title: 字体族
+    title: Font Families
     description: 
     type: heading
     level: 2
@@ -1470,7 +1469,7 @@ settings:
 
 -
     id: anp-header-header
-    title: 标题
+    title: Headings
     description: 
     type: heading
     level: 2
@@ -2193,8 +2192,8 @@ settings:
 
 -
     id: anp-workspace-header
-    title: 工作区
-    description: 背景、彩色边框、布局、侧边栏、标签页、透明度 等
+    title: Workspace
+    description: Background, Colorful Frame, Layout, Sidebar, Tabs, Translucency, etc.
     type: heading
     level: 1
     collapsed: true
@@ -2203,8 +2202,8 @@ settings:
 
 -
     id: anp-canvas-header
-    title: 画布 (Canvas)
-    description: 加深画布背景
+    title: Canvas
+    description: Darken Canvas Background
     type: heading
     level: 2
     collapsed: true
