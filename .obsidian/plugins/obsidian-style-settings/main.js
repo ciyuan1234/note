@@ -3338,16 +3338,16 @@ class ImportModal extends obsidian.Modal {
       // Build a label we will style as a link
       setting.controlEl.createEl('label', {
         cls: 'style-settings-import-label',
-        text: 'Import from file',
+        text: '从文件导入',
         attr: {
           for: 'style-settings-import-input',
         },
       });
       new obsidian.TextAreaComponent(contentEl)
-        .setPlaceholder('Paste config here...')
+        .setPlaceholder('粘贴配置...')
         .then((ta) => {
           new obsidian.ButtonComponent(contentEl)
-            .setButtonText('Save')
+            .setButtonText('保存')
             .onClick(() => __awaiter(this, void 0, void 0, function* () {
               yield importAndClose(ta.getValue().trim());
             }));
@@ -3371,13 +3371,13 @@ class ExportModal extends obsidian.Modal {
     const { contentEl, modalEl } = this;
     modalEl.addClass('modal-style-settings');
     new obsidian.Setting(contentEl)
-      .setName(`Export settings for: ${this.section}`)
+      .setName(`导出设置：${this.section}`)
       .then((setting) => {
         const output = JSON.stringify(this.config, null, 2);
         // Build a copy to clipboard link
         setting.controlEl.createEl('a', {
           cls: 'style-settings-copy',
-          text: 'Copy to clipboard',
+          text: '复制到剪贴板',
           href: '#',
         }, (copyButton) => {
           new obsidian.TextAreaComponent(contentEl)
@@ -3402,7 +3402,7 @@ class ExportModal extends obsidian.Modal {
         // Build a download link
         setting.controlEl.createEl('a', {
           cls: 'style-settings-download',
-          text: 'Download',
+          text: '下载',
           attr: {
             download: 'style-settings.json',
             href: `data:application/json;charset=utf-8,${encodeURIComponent(output)}`,
@@ -8627,7 +8627,7 @@ class AbstractSettingComponent {
   }
 }
 
-const resetTooltip = 'Restore default';
+const resetTooltip = '恢复默认';
 
 class ClassToggleSettingComponent extends AbstractSettingComponent {
   render(containerEl) {
@@ -9430,7 +9430,7 @@ class SettingsMarkup {
       containerEl.createDiv({ cls: 'style-settings-error' }, (wrapper) => {
         wrapper.createDiv({
           cls: 'style-settings-error-name',
-          text: `Error: ${err.name}`,
+          text: `错误： ${err.name}`,
         });
         wrapper.createDiv({
           cls: 'style-settings-error-desc',
