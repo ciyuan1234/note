@@ -6,6 +6,7 @@
 ==（**补充**：了解FAT32和NTFS的区别）==
  **Linux系统根目录的/proc目录下的filesystems可以查看支持的系统类型**
  
+ 
        
 
         
