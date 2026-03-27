@@ -4,6 +4,7 @@
 **2.软件系统：** 用户应用，系统应用
 **3.文件系统：** 文件存储的标准（linux常用：ext4、XFS、btrfs Windows常用：FAT32，NTFS，exFAT、ReFS）
 ==（**补充**：了解FAT32和NTFS的区别）==
+ **Linux系统根目录的/proc目录下的filesystems可以查看支持的系统类型**
  
        
 
