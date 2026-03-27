@@ -5,8 +5,9 @@
 **3.文件系统：** 文件存储的标准（linux常用：ext4、XFS、btrfs Windows常用：FAT32，NTFS，exFAT、ReFS）
 ==（**补充**：了解FAT32和NTFS的区别）==
  **Linux系统根目录的/proc目录下的filesystems可以查看支持的系统类型**
- 
- 
+==**（了解MMU内存管理单元）**==
+
+
        
 
         
