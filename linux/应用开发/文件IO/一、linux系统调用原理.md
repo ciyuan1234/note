@@ -7,7 +7,7 @@
  **Linux系统根目录的/proc目录下的filesystems可以查看支持的系统类型**![](../../../assets/Pasted%20image%2020260327213841.png)
 ==**（了解MMU内存管理单元）**==
 ![](../../../assets/Pasted%20image%2020260328203349.png)
-
+![](../../../assets/Pasted%20image%2020260328212710.png)
 
        
 
