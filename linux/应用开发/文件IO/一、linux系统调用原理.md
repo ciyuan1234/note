@@ -72,7 +72,8 @@
 标准C库中关于文件输入输出的函数接口一般为标准IO，访问文件的标准IO函数有fopen（）、fread（）、fwrite（）、fclose（）、fgetc（）、fputs（）、fprintf（）、fscanf（）等。
 3.打开文件
 ![](../../../assets/Pasted%20image%2020260402093723.png)
-
+==**思考：**==fopen返回值是一个指向FILE类型的指针，请问FILE是什么？
+==**回答**==
    
 
 
