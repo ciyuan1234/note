@@ -1,0 +1,56 @@
+{
+  "id": "9cc15840-f501-4e93-a1f7-21c3af8e49a3",
+  "title": "测试",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "测试",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n测试\n\n"
+        }
+      ],
+      "id": "95b7be72-837e-45c6-a3a2-0f870dd18701",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "使用指南/00--通用说明（重要！！！）/0-更新日志.md"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1753325858501,
+  "updatedAt": 1753325858501,
+  "schemaVersion": 1
+}

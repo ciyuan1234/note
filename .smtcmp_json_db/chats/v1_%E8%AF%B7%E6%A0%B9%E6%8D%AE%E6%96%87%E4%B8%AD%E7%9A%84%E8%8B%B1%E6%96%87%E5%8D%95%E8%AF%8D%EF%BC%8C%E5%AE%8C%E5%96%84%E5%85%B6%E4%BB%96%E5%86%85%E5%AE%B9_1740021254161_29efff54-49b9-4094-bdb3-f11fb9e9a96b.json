@@ -1,0 +1,47 @@
+{
+  "id": "29efff54-49b9-4094-bdb3-f11fb9e9a96b",
+  "title": "请根据文中的英文单词，完善其他内容",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n请根据文中的英文单词，完善其他内容\n\n"
+        }
+      ],
+      "id": "198221d2-49cb-43a8-b805-fc655fbef406",
+      "mentionables": []
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "id": "e8bae6e0-786e-4332-95c9-d9f42e76fa2b",
+      "metadata": {}
+    }
+  ],
+  "createdAt": 1738473723436,
+  "updatedAt": 1740021254161,
+  "schemaVersion": 1
+}

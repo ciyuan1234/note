@@ -1,2 +1,4 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+# 忽略 Obsidian 本地配置目录
+.obsidian/

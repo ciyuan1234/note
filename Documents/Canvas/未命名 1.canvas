@@ -1,0 +1,36 @@
+{
+  "edges": [
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 60,
+      "id": "5844b5cbbe499991",
+      "styleAttributes": {
+      },
+      "text": "测试",
+      "type": "text",
+      "width": 260,
+      "x": -260,
+      "y": -80
+    },
+    {
+      "color": "#8c4040",
+      "height": 60,
+      "id": "178a78d3196af336",
+      "styleAttributes": {
+        "border": "dotted",
+        "textAlign": "right"
+      },
+      "text": "按时",
+      "type": "text",
+      "width": 260,
+      "x": 60,
+      "y": -609
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+---
+title: KISS复盘模板
+tags: 
+- 模块
+- 复盘
+multiFile: 
+Keep: 
+Improve: 
+---
+
+``````ad-review
+title: KISS复盘
+color: 184,82,12
+🟢Keep.....`INPUT[text(placeholder(.),class(text-80)):Keep]`
+
+🟡Improve`INPUT[text(placeholder(.),class(text-80)):Improve]`
+
+🔴STop.....`INPUT[text(placeholder(.),class(text-80)):Stop]`
+
+🔵Start.....`INPUT[text(placeholder(.),class(text-80)):Start]`
+
+``````
+
+%%
+📃使用说明：
+可以在其他markdown文件中输入/粘贴以下代码块以使用本模块；
+````右上角复制
+```meta-bind-embed
+[[KISS复盘模块]]
+```
+````
+输入快捷操作：alt+1
+粘贴快捷操作：右上角图标复制，然后粘贴
+本模块被嵌套到其他文档中后；
+- 点击`+`号添加内容，添加的内容会绑定到前页frontmatter（文档属性/元数据/metadata）中，如果未显示，可以在`设置-编辑器-文档属性`开启它；
+- 点击模块右上角的</>符号修改本模块（颜色、字体、长宽、布局等）；
+- 请支持正版，点击此处👉[视频课](https://img-1319209135.cos.ap-chongqing.myqcloud.com/202406211223554.png)咨询、学习进阶课程；
+🚨提示：
+- 注1：当修改了本模块样式后，被嵌入在其他文档的样式（不含输入内容）也会跟随调整；
+- 注2：本使用说明中的注释内容不会被嵌套到其他文件中；
+%%

@@ -1,0 +1,23 @@
+{
+  "edges": [],
+  "nodes": [
+    {
+      "id": "note-1749188294094-5684",
+      "type": "file",
+      "file": "Documents/I.P.A.R.A/0-收集箱/未命名 3.md",
+      "x": 100,
+      "y": 100,
+      "width": 440,
+      "height": 500
+    },
+    {
+      "id": "note-1749188442073-6504",
+      "type": "file",
+      "file": "Assistants/Templater/主页/homepage-主页-卡片盒笔记.md",
+      "x": 590,
+      "y": 100,
+      "width": 440,
+      "height": 500
+    }
+  ]
+}
