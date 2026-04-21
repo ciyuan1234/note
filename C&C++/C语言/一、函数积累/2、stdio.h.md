@@ -17,3 +17,4 @@ int fprintf(FILE *stream, const char *format, ...);
 - `printf` 只能输出到控制台
 - `fprintf` 可以指定输出到**任意文件 / 控制台**
 > 等价关系：`printf("内容");` = `fprintf(stdout, "内容");`（使用fprintf输出到控制台）
+
