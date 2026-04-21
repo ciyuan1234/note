@@ -1,6 +1,8 @@
 # 一、fprintf
 ## 1、头文件
-
+```c
+#include<stdio.h>
+```
 ## 1、函数原型
 ```c 
 int fprintf(FILE *stream, const char *format, ...);
