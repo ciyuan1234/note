@@ -1,4 +1,6 @@
 # 一、fprintf
+## 1、头文件
+
 ## 1、函数原型
 ```c 
 int fprintf(FILE *stream, const char *format, ...);
@@ -16,6 +18,7 @@ int fprintf(FILE *stream, const char *format, ...);
 `fprintf` 和我们最熟悉的 `printf` 几乎一样，**唯一区别**：
 - `printf` 只能输出到控制台
 - `fprintf` 可以指定输出到**任意文件 / 控制台**
-> `printf("内容");` = `fprintf(stdout, "内容");`（使用fprintf输出到控制台）
+> `printf("内容");` = `fprintf(stdout, "内容");`==（使用fprintf输出到控制台）== 
+![[Pasted image 20260421201243.png]]
 
 
