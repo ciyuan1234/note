@@ -20,7 +20,17 @@ int fprintf(FILE *stream, const char *format, ...);
 `fprintf` 和我们最熟悉的 `printf` 几乎一样，**唯一区别**：
 - `printf` 只能输出到控制台
 - `fprintf` 可以指定输出到**任意文件 / 控制台**
-> `printf("内容");` = `fprintf(stdout, "内容");`==（使用fprintf输出到控制台）== 
-![[Pasted image 20260421201243.png]]
+> `printf("内容");` = `fprintf(stdout, "容");`==（使用fprintf输出到控制台）== 
+## 4. 常用格式符（和 printf 通用）
+
+| 格式符   | 作用       |
+| ----- | -------- |
+| `%d`  | 输出十进制整数  |
+| `%c`  | 输出单个字符   |
+| `%s`  | 输出字符串    |
+| `%f`  | 输出浮点数    |
+| `%lf` | 输出双精度浮点数 |
+| `%x`  | 输出十六进制数  |
+
 
 
