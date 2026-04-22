@@ -31,6 +31,15 @@ int fprintf(FILE *stream, const char *format, ...);
 | `%f`  | 输出浮点数    |
 | `%lf` | 输出双精度浮点数 |
 | `%x`  | 输出十六进制数  |
-# 二、
-
-
+# 二、va_start
+## 1、头文件
+```c
+#include<stdio.h>
+```
+## 2、函数原型
+```c
+void va_start(va_list ap, last_arg);
+```
+## 3、参数说明
+- `va_list ap`：可变参数列表变量（必须提前定义）
+- `last_arg`：最后一个**固定参数**（也就是 `...` 前面的那个参数）
