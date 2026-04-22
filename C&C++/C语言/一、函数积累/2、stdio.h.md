@@ -22,7 +22,7 @@ int fprintf(FILE *stream, const char *format, ...);
 - `fprintf` 可以指定输出到**任意文件 / 控制台**
 > `printf("内容");` = `fprintf(stdout, "容");`==（使用fprintf输出到控制台）== 
 ## 4. 常用格式符（和 printf 通用）
-
+  
 | 格式符   | 作用       |
 | ----- | -------- |
 | `%d`  | 输出十进制整数  |
